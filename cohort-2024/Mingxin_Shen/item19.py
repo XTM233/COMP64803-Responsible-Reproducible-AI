@@ -7,8 +7,8 @@ from collections import namedtuple
 def generate_data(N=20):
     """Generates random binary classification data."""
 
-    y_true = [random.choice([0, 1]) for _ in range(N)]
-    y_pred = [random.choice([0, 1]) for _ in range(N)]
+    y_true = [0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0]
+    y_pred = [1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0]
 
     print(f"y_true:{y_true}")
     print(f"y_pred:{y_pred}")

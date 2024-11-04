@@ -16,13 +16,13 @@ def generate_data(N=100, random_state=42):
 def train_model(X, y, batch_size=32, epochs=10):
     """Trains a logistic regression model on the given data."""  
 
-    model = LogisticRegression(max_iter=epochs, solver="saga", optimizer="sgd")
+    model = LogisticRegression(max_iter=epochs, solver="saga")
     model.fit(X, y)
     return model
 
 def train_model_goodway(X, y, /, *, batch_size=32, epochs=10):
     """Trains a logistic regression model on the given data."""
-    model = LogisticRegression(max_iter=epochs, solver="saga", optimizer="sgd")
+    model = LogisticRegression(max_iter=epochs, solver="saga")
     model.fit(X, y)
     return model
 
