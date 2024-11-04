@@ -48,14 +48,12 @@ if __name__ == "__main__":
     # dangerous practice
     input("")
     accuracy, precision, recall, f1 = compute_metrics(y_true, y_pred)
-    print(f"Accuracy: {accuracy}, Precision: {precision}, 
-          Recall: {recall}, F1 Score: {f1}")
+    print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1}")
     input("↑ Normal behavior")
 
     # dangerous practice trigger a bug that can be spotted
     precision, accuracy, recall, f1 = compute_metrics(y_true, y_pred)
-    print(f"Accuracy: {accuracy}, Precision: {precision}, 
-          Recall: {recall}, F1 Score: {f1}")
+    print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1}")
 
     input("↑ Precision, accuracy swapped.")
     # good practice
