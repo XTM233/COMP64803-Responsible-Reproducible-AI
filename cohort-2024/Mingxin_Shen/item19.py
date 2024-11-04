@@ -58,5 +58,4 @@ if __name__ == "__main__":
     input("↑ Precision, accuracy swapped.")
     # good practice
     metrics = compute_metrics_goodway(y_true, y_pred)
-    print(f"Accuracy: {metrics['accuracy']}, Precision: {metrics['precision']}, 
-          Recall: {metrics['recall']}, F1 Score: {metrics['f1_score']}")
+    print(f"Accuracy: {metrics['accuracy']}, Precision: {metrics['precision']}, Recall: {metrics['recall']}, F1 Score: {metrics['f1_score']}")
